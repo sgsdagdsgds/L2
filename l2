@@ -189,7 +189,7 @@ function domainName(url) {
 }
 
 
-// 12 Convert a hex string to RGB
+// 11 Convert a hex string to RGB
 function hexStringToRGB(hexString) {
   let red = hexString.slice(1, 3);
   let green = hexString.slice(3, 5);
@@ -203,7 +203,7 @@ function hexStringToRGB(hexString) {
 }
 
 
-// 13 Circularly sorted array
+// 12 Circularly sorted array
 function isCircleSorted(arr) {
   let drops = 0;
 
@@ -222,7 +222,7 @@ function isCircleSorted(arr) {
 
 
 
-// 15. Extend the Array class
+// 13 Extend the Array class
 Array.prototype.square = function () {
   return this.map(x => x * x);
 };
@@ -248,7 +248,7 @@ Array.prototype.odd = function () {
 };
 
 
-// 16 Cache function results
+// 14 Cache function results
 function cache(func) {
   let memory = {};
 
@@ -266,7 +266,7 @@ function cache(func) {
 }
 
 
-// 17 Create phone number
+// 15 Create phone number
 function createPhoneNumber(numbers) {
   let digits = numbers.join("");
 
