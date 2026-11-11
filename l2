@@ -25,9 +25,9 @@ function whatCentury(year) {
 
     if (lastDigit === 1) {
       ending = "st";
-    } else if (lastDigit === 2) {
+    } else if (lastDigit == 2) {
       ending = "nd";
-    } else if (lastDigit === 3) {
+    } else if (lastDigit == 3) {
       ending = "rd";
     }
   }
@@ -57,13 +57,13 @@ function primeFactors(n) {
   for (let d = 2; d * d <= n; d++) {
     let power = 0;
 
-    while (n % d === 0) {
+    while (n % d == 0) {
       n /= d;
       power++;
     }
 
     if (power > 0) {
-      result += power === 1 ? `(${d})` : `(${d}**${power})`;
+      result += power == 1 ? `(${d})` : `(${d}**${power})`;
     }
   }
 
@@ -83,7 +83,7 @@ function toWeirdCase(string) {
     let newWord = "";
 
     for (let i = 0; i < word.length; i++) {
-      if (i % 2 === 0) {
+      if (i % 2 == 0) {
         newWord += word[i].toUpperCase();
       } else {
         newWord += word[i].toLowerCase();
@@ -102,7 +102,7 @@ function wave(str) {
   let result = [];
 
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === " ") {
+    if (str[i] == " ") {
       continue;
     }
 
@@ -155,7 +155,7 @@ function bingo(ticket, win) {
     let number = ticket[i][1];
 
     for (let j = 0; j < text.length; j++) {
-      if (text.charCodeAt(j) === number) {
+      if (text.charCodeAt(j) == number) {
         miniWins++;
         break;
       }
@@ -237,7 +237,7 @@ Array.prototype.average = function () {
 };
 
 Array.prototype.even = function () {
-  return this.filter(x => x % 2 === 0);
+  return this.filter(x => x % 2 == 0);
 };
 
 Array.prototype.odd = function () {
