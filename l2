@@ -13,9 +13,6 @@ function hasTwoCubeSums(n) {
   return count >= 2;
 }
 
-  return [network.join("."), host.join(".")];
-}
-
 
 // 2 What century is it?
 function whatCentury(year) {
